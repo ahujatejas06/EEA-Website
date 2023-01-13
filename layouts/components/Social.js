@@ -65,7 +65,7 @@ const Social = ({ source, className }) => {
     website,
   } = source;
   return (
-    <ul className={className}>
+    <ul className={className} style={{paddingTop:"15px"}}>
       {facebook && (
         <li className="inline-block">
           <a

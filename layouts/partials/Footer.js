@@ -16,9 +16,10 @@ const Footer = () => {
         <div className="row">
           {footer.map((col) => {
             return (
-              <div className="mb-12 sm:col-6 lg:col-3" key={col.name}>
+              <div className="mb-6 sm:col-6 lg:col-6" key={col.name}>
+                <div style={{alignItems:"center"}}>
                 {markdownify(col.name, "h2", "h4")}
-                <ul className="mt-6">
+                <ul className="mt-12">
                   {col?.menu.map((item) => (
                     <li className="mb-1" key={item.text}>
                       <Link href={item.url} rel="">
@@ -27,20 +28,17 @@ const Footer = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
               </div>
             );
           })}
           {/* social icons */}
-          <div className="md-12 sm:col-6 lg:col-3">
-            <Link href="/" aria-label="Bigspring">
-              <Image
-                src={config.site.logo}
-                width={config.site.logo_width}
-                height={config.site.logo_height}
-                alt=""
-              />
-            </Link>
-            {markdownify(footer_content, "p", "mt-3 mb-6")}
+          <div className="md-6 sm:col-6 lg:col-6">
+            <h5 className="mb-3">EEA Office</h5>
+            <p>109, outreach building</p>
+            <p>IIT Kanpur, Kanpur-208016 </p>
+            <p>Phone no.: +91 512 259 44 33/34</p>
+            <p>Email:spo@iitk.ac.in</p>
             <Social source={social} className="social-icons mb-8" />
           </div>
         </div>

@@ -14,7 +14,7 @@ const Home = ({ frontmatter }) => {
   const { title } = config.site;
 
   return (
-    <Base title={`${title}| Home`}>
+    <Base title={`${title} | Home`}>
       {/* Banner */}
       <section className="section pb-[50px]">
         <div className="container">
@@ -50,12 +50,16 @@ const Home = ({ frontmatter }) => {
           <div className="text-center">
             <h2>{markdownify(feature.title)}</h2>
           </div>
+          <div className="text-center" style={{margin:'20px'}}>
+            <p>{markdownify(feature.quote)}</p>
+          </div>
           <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             {feature.features.map((item, i) => (
               <div
                 className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
                 key={`feature-${i}`}
               >
+              <Link href={`${item.link}`}>
                 {item.icon && (
                   <Image
                     className="mx-auto"
@@ -63,12 +67,14 @@ const Home = ({ frontmatter }) => {
                     width={30}
                     height={30}
                     alt=""
-                  />
-                )}
+                    />
+                    )}
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
                   <p className="mt-3">{item.content}</p>
+
                 </div>
+              </Link>
               </div>
             ))}
           </div>
@@ -138,7 +144,7 @@ const Home = ({ frontmatter }) => {
       })}
 
       {/* workflow */}
-      <section className="section pb-0">
+      {/* <section className="section pb-0">
         <div className="mb-8 text-center">
           {markdownify(
             workflow.title,
@@ -153,7 +159,7 @@ const Home = ({ frontmatter }) => {
           width={1920}
           height={296}
         />
-      </section>
+      </section> */}
 
       {/* Cta */}
       <Cta cta={call_to_action} />

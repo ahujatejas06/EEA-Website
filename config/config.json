@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Electrical Engineering Association | EEA",
+    "title": "Electrical Engineers' Association | EEA",
     "base_url": "/",
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
@@ -24,8 +24,7 @@
   "params": {
     "contact_form_action": "",
     "tag_manager_id": "",
-    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+    "copyright": "Designed and Developed By The EEA Team"
   },
 
   "metadata": {
