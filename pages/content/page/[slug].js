@@ -4,8 +4,8 @@ import Base from "@layouts/Baseof";
 import { getListPage, getSinglePage } from "@lib/contentParser";
 import { parseMDX } from "@lib/utils/mdxParser";
 import { markdownify } from "@lib/utils/textConverter";
-import Posts from "@partials/eventPosts";
-const { events_folder } = config.settings;
+import Posts from "@partials/Posts";
+const { content_folder } = config.settings;
 
 // blog pagination
 const BlogPagination = ({ postIndex, posts, currentPage, pagination }) => {
@@ -23,7 +23,7 @@ const BlogPagination = ({ postIndex, posts, currentPage, pagination }) => {
           {markdownify(title, "h1", "h1 text-center font-normal text-[56px]")}
           <Posts posts={currentPosts} />
           <Pagination
-            section={events_folder}
+            section={content_folder}
             totalPages={totalPages}
             currentPage={currentPage}
           />
@@ -37,10 +37,10 @@ export default BlogPagination;
 
 // get blog pagination slug
 export const getStaticPaths = () => {
-  const getAllSlug = getSinglePage(`content/${events_folder}`);
+  const getAllSlug = getSinglePage(`content/${content_folder}`);
   const allSlug = getAllSlug.map((item) => item.slug);
-  const { pagination } = config.settings;
-  const totalPages = Math.ceil(allSlug.length / pagination);
+  const { content_pagination } = config.settings;
+  const totalPages = Math.ceil(allSlug.length / content_pagination);
   let paths = [];
 
   for (let i = 1; i < totalPages; i++) {
@@ -60,17 +60,17 @@ export const getStaticPaths = () => {
 // get blog pagination content
 export const getStaticProps = async ({ params }) => {
   const currentPage = parseInt((params && params.slug) || 1);
-  const { pagination } = config.settings;
-  const posts = getSinglePage(`content/${events_folder}`).sort(
+  const { content_pagination } = config.settings;
+  const posts = getSinglePage(`content/${content_folder}`).sort(
     (post1, post2) =>
       new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
   );
-  const postIndex = await getListPage(`content/${events_folder}/_index.md`);
+  const postIndex = await getListPage(`content/${content_folder}/_index.md`);
   const mdxContent = await parseMDX(postIndex.content);
 
   return {
     props: {
-      pagination: pagination,
+      pagination: content_pagination,
       posts: posts,
       currentPage: currentPage,
       postIndex: postIndex,
