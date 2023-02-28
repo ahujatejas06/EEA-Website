@@ -1,5 +1,4 @@
 import config from "@config/config.json";
-import { plainify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -2,10 +2,10 @@
   "site": {
     "title": "Electrical Engineers' Association | EEA",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/icon.png",
     "logo": "/images/logo.png",
-    "logo_width": "200",
-    "logo_height": "48",
+    "logo_width": "125",
+    "logo_height": "125",
     "logo_text": "EEA"
   },
 
@@ -18,7 +18,7 @@
   },
 
   "nav_button": {
-    "enable": true,
+    "enable": false,
     "label": "Get Started",
     "link": "/contact"
   },
