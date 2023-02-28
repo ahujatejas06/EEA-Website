@@ -10,7 +10,7 @@
   },
 
   "settings": {
-    "pagination": 4,
+    "pagination": 10,
     "summary_length": 200,
     "events_folder": "/events",
     "content_folder": "/content",

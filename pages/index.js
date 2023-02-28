@@ -53,7 +53,7 @@ const Home = ({ frontmatter }) => {
           <div className="text-center" style={{margin:'20px'}}>
             <p>{markdownify(feature.quote)}</p>
           </div>
-          <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-2">
             {feature.features.map((item, i) => (
               <div
                 className="feature-card rounded-xl bg-white p-5 pb-8 text-center"

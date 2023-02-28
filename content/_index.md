@@ -20,10 +20,6 @@ feature:
     icon: "/images/blogs.jpeg"
     content: "EEA-Blogs, a blog series on recent happenings and rapid advances in the field of Electrical Engg."
     link: "/blogs"
-  - name: "Team"
-    icon: "/images/user-clock.svg"
-    content: "Our team comprises of a faculty advisor, 3 heads, and 20 secretaries. Nothing would have had been possible without the team's unity."
-    link: "/team" 
   # - name: "Value for Money"
   #   icon: "/images/love.svg"
   #   content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
@@ -36,18 +32,18 @@ feature:
 
 # services
 services:
-  - title: "Recent Happenings"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Recent Conducted Events"
+    content: "The EEA conducted an Introductory Session on the 31st of October, 2022 for the EE-Y21 UGs. The session witnessed a huge audience and covered a spectrum of topics, such as the mission of the EEA, courses offered in the upcoming semesters, and queries regarding projects and interns. This was the first step of the EEA in a long journey to foster a rich culture in the EE department of the IITK."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
       - "/images/service-slide-3.png"
     button:
-      enable: false
+      enable: true
       label: Check it out
-      link: /contact
+      link: /events
 
-  - title: "A Note from The Director"
+  - title: "A Note from The Head "
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images: 
       - "/images/service-slide-1.png"
@@ -56,16 +52,16 @@ services:
       label: Check it out
       link: /contact
   
-  - title: "Research Highlights"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-    images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
-    button:
-      enable: false
-      label: Check it out
-      link: /contact
+  # - title: "Research Highlights"
+  #   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  #   images:
+  #     - "/images/service-slide-1.png"
+  #     - "/images/service-slide-2.png"
+  #     - "/images/service-slide-3.png"
+  #   button:
+  #     enable: false
+  #     label: Check it out
+  #     link: /contact
 
   # - title: "A company standing different from others"
   #   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
