@@ -5,16 +5,24 @@
       "url": "/"
     },
     {
-      "name": "Blogs",
+      "name":"Events",
+      "url":"/events"
+    },
+    {
+      "name": "Content",
       "url": "/blogs"
+    },
+    {
+      "name":"Gallery",
+      "url":"/gallery"
+    },
+    {
+      "name": "Team",
+      "url": "/faq"
     },
     {
       "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "FAQ",
-      "url": "/faq"
     }
   ],
   "footer": [
