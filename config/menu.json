@@ -10,7 +10,7 @@
     },
     {
       "name": "Content",
-      "url": "/content"
+      "url": "/blogs"
     },
     {
       "name":"Gallery",
@@ -30,8 +30,16 @@
       "name": "IIT-K Links",
       "menu": [
         {
-          "text": "Location",
-          "url": "#"
+          "text": "IIT-K EE Homepage",
+          "url": "https://www.iitk.ac.in/ee/"
+        },
+        {
+          "text": "Faculty",
+          "url": "https://www.iitk.ac.in/ee/faculty-stream-wise-list"
+        },
+        {
+          "text": "Electrical Engineering Courses",
+          "url": "https://www.iitk.ac.in/scdmc/electrical-engineering-courses"
         }
       ]
     }
