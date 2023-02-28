@@ -12,9 +12,7 @@
   "settings": {
     "pagination": 4,
     "summary_length": 200,
-    "events_folder": "/events",
-    "content_folder": "/content",
-    "content_pagination": 5
+    "blog_folder": "events"
   },
 
   "nav_button": {
@@ -30,8 +28,8 @@
   },
 
   "metadata": {
-    "meta_author": "Electrical Engineering Association",
+    "meta_author": "Themefisher",
     "meta_image": "",
-    "meta_description": "EEA Website"
+    "meta_description": "A SAAS template for nextjs"
   }
 }

@@ -1,4 +1,4 @@
 ---
-title: "Recently Conducted Events"
-description: "Lists out the recent events conducted by the organization"
+title: "Latest news"
+description: "this is meta description"
 ---
