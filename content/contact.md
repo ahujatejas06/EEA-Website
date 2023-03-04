@@ -8,5 +8,5 @@ info:
   contacts: 
     # - "phone: +88 125 256 452"
     # - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "Address: ACES Building, G67J+5RM, Kalyanpur, Kanpur, Uttar Pradesh 208016"
 ---
