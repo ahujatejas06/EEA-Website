@@ -4,10 +4,11 @@ import Link from "next/link";
 
 function Team({ data }) {
   const { frontmatter } = data;
-  const { overallHeads, teamHeads, webAndDesign, eventsAndContent, outreachAndDatabasing, Heads, teamHeadsMembers, members } = frontmatter;
+  const { overallHeads, teamHeads, webAndDesign, eventsAndContent, outreachAndDatabasing, Heads, teamHeadsMembers, webMembers, outreachMembers, eventMembers } = frontmatter;
   return (
     <section className="section bg-white">
       <div className="container">
+
         {markdownify(overallHeads, "h1", "text-center font-normal")}
         <div className="section row  -mt-6">
           <div className="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-2">
@@ -20,20 +21,21 @@ function Team({ data }) {
                   <Image
                     className="mx-auto"
                     src={item.icon}
-                    height={600}
-                    width={300}
+                    height={200}
+                    width={200}
                     alt=""
                     />
                     )}
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.content}</p>
-
+                  <p className="mt-3">{item.phone}</p>
+                  <p className="mt-3">{item.email}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
         {markdownify(teamHeads, "h2", "text-center font-normal")}
         <div className="section row  -mt-6">
           <div className="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -43,45 +45,137 @@ function Team({ data }) {
                 key={`feature-${i}`
               }
               >
+              <div className="mt-6">
                 {item.icon && (
                   <Image
                     className="mx-auto"
                     src={item.icon}
-                    height={600}
+                    height={200}
                     width={200}
                     alt=""
                     />
                     )}
+                </div>
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.content}</p>
-
+                  <p className="mt-3">{item.phone}</p>
+                  <p className="mt-3">{item.email}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
         {markdownify(webAndDesign, "h2", "text-center font-normal")}
         <div className="section row  -mt-6">
-          <div className="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-5">
-            {members.map((item, i) => (
+          <div className="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+            {webMembers.map((item, i) => (
               <div
                 className="feature-card rounded-s bg-gray-50 p-5 text-center"
                 key={`feature-${i}`}
               >
+              <div className="mt-6" sx = {{height: "80vh", postition:"absolute"}}>
                 {item.icon && (
                   <Image
                     className="mx-auto"
                     src={item.icon}
-                    height={600}
+                    height={200}
+                    width={200}
+                    object-fit= "contain"
+                    alt=""
+                    />
+                    )}
+                {!item.icon && (
+                  <Image
+                    className="mx-auto"
+                    src={item.gender == 'M'? "/images/team/male.svg":"/images/team/female.svg"}
+                    height={200}
                     width={200}
                     alt=""
                     />
                     )}
+                </div>
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.content}</p>
+                  <p className="mt-3">{item.phone}</p>
+                  <p className="mt-3">{item.email}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
+        {markdownify(outreachAndDatabasing, "h2", "text-center font-normal")}
+        <div className="section row  -mt-6">
+          <div className="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+            {outreachMembers.map((item, i) => (
+              <div
+                className="feature-card rounded-s bg-gray-50 p-5 text-center"
+                key={`feature-${i}`}
+              >
+              <div className="mt-6">
+                {item.icon && (
+                  <Image
+                    className="mx-auto"
+                    src={item.icon}
+                    height={200}
+                    width={200}
+                    alt=""
+                    />
+                    )}
+
+                {!item.icon && (
+                  <Image
+                    className="mx-auto"
+                    src={item.gender == 'M'? "/images/team/male.svg":"/images/team/female.svg"}
+                    height={200}
+                    width={200}
+                    alt=""
+                    />
+                    )}
+                </div>
+                <div className="mt-4">
+                  {markdownify(item.name, "h3", "h5")}
+                  <p className="mt-3">{item.phone}</p>
+                  <p className="mt-3">{item.email}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {markdownify(eventsAndContent, "h2", "text-center font-normal")}
+        <div className="section row  -mt-6">
+          <div className="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+            {eventMembers.map((item, i) => (
+              <div
+                className="feature-card rounded-s bg-gray-50 p-5 text-center"
+                key={`feature-${i}`}
+              >
+                <div className="mt-6">
+                {item.icon && (
+                  <Image
+                    className="mx-auto"
+                    src={item.icon}
+                    width={200}
+                    height={200}
+                    alt=""
+                    />
+                    )}
+                  {!item.icon && (
+                  <Image
+                    className="mx-auto"
+                    src={item.gender == 'M'? "/images/team/male.svg":"/images/team/female.svg"}
+                    height={200}
+                    width={200}
+                    alt=""
+                    />
+                    )}
+                </div> 
+                <div className="mt-4">
+                  {markdownify(item.name, "h3", "h5")}
+                  <p className="mt-3">{item.phone}</p>
+                  <p className="mt-3">{item.email}</p>
                 </div>
               </div>
             ))}
