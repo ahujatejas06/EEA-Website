@@ -21,15 +21,17 @@ function Team({ data }) {
                   <Image
                     className="mx-auto"
                     src={item.icon}
-                    height={200}
-                    width={200}
+                    height={300}
+                    width={300}
                     alt=""
                     />
                     )}
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.phone}</p>
-                  <p className="mt-3">{item.email}</p>
+                  <br/>
+                  <span className="mt-3">{item.phone}</span>
+                  <br/>
+                  <span className="mt-3">{item.email}</span>
                 </div>
               </div>
             ))}
@@ -50,16 +52,18 @@ function Team({ data }) {
                   <Image
                     className="mx-auto"
                     src={item.icon}
-                    height={200}
-                    width={200}
+                    height={250}
+                    width={250}
                     alt=""
                     />
                     )}
                 </div>
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.phone}</p>
-                  <p className="mt-3">{item.email}</p>
+                  <b><p className="mt-3">{item.content}</p></b>
+                  <span className="mt-3">{item.phone}</span>
+                  <br/>
+                  <span className="mt-3">{item.email}</span>
                 </div>
               </div>
             ))}
@@ -97,8 +101,10 @@ function Team({ data }) {
                 </div>
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.phone}</p>
-                  <p className="mt-3">{item.email}</p>
+                  <br/>
+                  <span className="mt-3">{item.phone}</span>
+                  <br/>
+                  <span className="mt-3">{item.email}</span>
                 </div>
               </div>
             ))}
@@ -136,8 +142,10 @@ function Team({ data }) {
                 </div>
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.phone}</p>
-                  <p className="mt-3">{item.email}</p>
+                  <br/>
+                  <span className="mt-3">{item.phone}</span>
+                  <br/>
+                  <span className="mt-3">{item.email}</span>
                 </div>
               </div>
             ))}
@@ -174,8 +182,10 @@ function Team({ data }) {
                 </div> 
                 <div className="mt-4">
                   {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.phone}</p>
-                  <p className="mt-3">{item.email}</p>
+                  <br/>
+                  <span className="mt-3">{item.phone}</span>
+                  <br/>
+                  <span className="mt-3">{item.email}</span>
                 </div>
               </div>
             ))}
