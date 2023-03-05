@@ -34,11 +34,9 @@ const Footer = () => {
           })}
           {/* social icons */}
           <div className="md-6 sm:col-6 lg:col-6">
-            <h5 className="mb-3">EEA Office</h5>
-            <p>109, outreach building</p>
+            <h5 className="mb-3">ACES Building</h5>
+            <p>Academic Area</p>
             <p>IIT Kanpur, Kanpur-208016 </p>
-            <p>Phone no.: +91 512 259 44 33/34</p>
-            <p>Email:spo@iitk.ac.in</p>
             <Social source={social} className="social-icons mb-8" />
           </div>
         </div>

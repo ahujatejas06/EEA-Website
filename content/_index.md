@@ -14,7 +14,7 @@ feature:
   features:
   - name: "Events"
     icon: "/images/code.svg"
-    content: "The society organizes a wide range of activities for the benefit of the Chemical department community at IITK. These activities range from fun-filled Happy-Hours to large Symposiums."
+    content: "The society organizes a wide range of activities for the benefit of the Electrical department community at IITK. These activities range from fun-filled Happy-Hours to large Symposiums."
     link : "/events"
   - name: "Blogs"
     icon: "/images/blogs.jpeg"
@@ -32,25 +32,25 @@ feature:
 
 # services
 services:
-  - title: "Recent Conducted Events"
+  - title: "Recently Conducted Events"
     content: "The EEA conducted an Introductory Session on the 31st of October, 2022 for the EE-Y21 UGs. The session witnessed a huge audience and covered a spectrum of topics, such as the mission of the EEA, courses offered in the upcoming semesters, and queries regarding projects and interns. This was the first step of the EEA in a long journey to foster a rich culture in the EE department of the IITK."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/introSession1.jpeg"
+      # - "/images/service-slide-2.png"
+      # - "/images/service-slide-3.png"
     button:
       enable: true
       label: Check it out
       link: /events
 
-  - title: "A Note from The Head "
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-    images: 
-      - "/images/service-slide-1.png"
-    button:
-      enable: false
-      label: Check it out
-      link: /contact
+  # - title: "A Note from The Head "
+  #   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  #   images: 
+  #     - "/images/service-slide-1.png"
+  #   button:
+  #     enable: false
+  #     label: Check it out
+  #     link: /contact
   
   # - title: "Research Highlights"
   #   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
