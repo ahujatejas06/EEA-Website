@@ -19,7 +19,7 @@ feature:
   - name: "Blogs"
     icon: "/images/blogs.jpeg"
     content: "EEA-Blogs, a blog series on recent happenings and rapid advances in the field of Electrical Engg."
-    link: "/blogs"
+    link: "/content"
   # - name: "Value for Money"
   #   icon: "/images/love.svg"
   #   content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
