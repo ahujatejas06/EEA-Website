@@ -32,10 +32,7 @@ const Posts = ({ posts }) => {
                 </Link>
               </h2>
               <p className="text-text">
-                {plainify(
-                  post.content?.slice(0, Number(summary_length)),
-                  "div"
-                )}
+                {posts[0].frontmatter.description}
               </p>
               <Link
                 className="btn btn-primary mt-4"
